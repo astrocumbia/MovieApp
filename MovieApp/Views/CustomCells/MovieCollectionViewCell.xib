@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCollectionViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="308"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="308"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OP-16-adp">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="308"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZGX-bN-VGb">
+                                <rect key="frame" x="5" y="5" width="187" height="298"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="ZGX-bN-VGb" firstAttribute="leading" secondItem="3OP-16-adp" secondAttribute="leading" constant="5" id="2Sd-ZZ-Dkh"/>
+                            <constraint firstAttribute="trailing" secondItem="ZGX-bN-VGb" secondAttribute="trailing" constant="5" id="kSF-ri-jCH"/>
+                            <constraint firstAttribute="bottom" secondItem="ZGX-bN-VGb" secondAttribute="bottom" constant="5" id="vax-k6-bZ7"/>
+                            <constraint firstItem="ZGX-bN-VGb" firstAttribute="top" secondItem="3OP-16-adp" secondAttribute="top" constant="5" id="xQ4-eA-8AU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3OP-16-adp" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CdQ-VQ-t5o"/>
+                <constraint firstAttribute="bottom" secondItem="3OP-16-adp" secondAttribute="bottom" id="Geq-dx-Ymo"/>
+                <constraint firstItem="3OP-16-adp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OM7-ih-PgV"/>
+                <constraint firstAttribute="trailing" secondItem="3OP-16-adp" secondAttribute="trailing" id="YWL-hZ-dVg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="197" height="308"/>
+            <connections>
+                <outlet property="frontImage" destination="ZGX-bN-VGb" id="kee-oi-Xl1"/>
+                <outlet property="mainView" destination="3OP-16-adp" id="GVE-hP-3AD"/>
+            </connections>
+            <point key="canvasLocation" x="76.5" y="75"/>
+        </collectionViewCell>
+    </objects>
+</document>
